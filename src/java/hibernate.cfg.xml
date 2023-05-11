@@ -8,5 +8,9 @@
         <mapping class="demo.models.Department"/>
         <mapping class="demo.models.Student"/>
         <mapping class="demo.models.Address"/>
+        <mapping class="demo.models.Question"/>
+        <mapping class="demo.models.Answer"/>
+        <mapping class="demo.models.Person"/>
+        <mapping class="demo.models.Laptop"/>
     </session-factory>
 </hibernate-configuration>

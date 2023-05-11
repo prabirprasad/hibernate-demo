@@ -20,6 +20,7 @@ public class Student implements Serializable {
     private Integer studentId;
     private String studentName;
     private String city;
+    private Certificate certificate;
 
     public Student() {
     }
@@ -54,9 +55,17 @@ public class Student implements Serializable {
         this.city = city;
     }
 
+    public Certificate getCertificate() {
+        return certificate;
+    }
+
+    public void setCertificate(Certificate certificate) {
+        this.certificate = certificate;
+    }
+
     @Override
     public String toString() {
-        return "Student{" + "studentId=" + studentId + ", studentName=" + studentName + ", city=" + city + '}';
+        return "Student{" + "studentId=" + studentId + ", studentName=" + studentName + ", city=" + city + ", certificate=" + certificate + '}';
     }
     
 }
