@@ -8,6 +8,7 @@ package demo.models;
 import java.io.Serializable;
 import java.util.List;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
@@ -22,7 +23,7 @@ public class Person implements Serializable {
     private Integer personId;
     private String personName;
     
-    @OneToMany(mappedBy = "person")
+    @OneToMany(mappedBy = "person", fetch = FetchType.EAGER)
     private List<Laptop> laptops;
 
     public Person() {

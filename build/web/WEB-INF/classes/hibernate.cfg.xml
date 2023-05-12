@@ -12,5 +12,7 @@
         <mapping class="demo.models.Answer"/>
         <mapping class="demo.models.Person"/>
         <mapping class="demo.models.Laptop"/>
+        <mapping class="demo.models.Employee"/>
+        <mapping class="demo.models.Project"/>
     </session-factory>
 </hibernate-configuration>
